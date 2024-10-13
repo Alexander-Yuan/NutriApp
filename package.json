@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "metro": "^0.80.12",
+    "metro-core": "^0.80.12"
+  },
+  "packageManager": "yarn@3.6.4"
+}
