@@ -1,38 +1,105 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #f7f5ec;
+  /* Light brown background */
+  background-size: cover;
+  /* Cover the entire background */
+  background-position: center;
+  /* Center the background image */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  /* Align items at the start */
+  color: #333;
+  /* Dark text for contrast */
+  font-family: Arial, sans-serif;
+  /* Basic font */
+  margin: 0;
+  /* Remove default margin */
+}
+
+.App-header {
+  background-color: rgba(76, 175, 80, 0.8);
+  /* Green header with transparency */
+  padding: 20px;
+  /* Increase padding */
+  width: 100%;
   color: white;
+  position: relative;
+  /* Change to relative positioning */
+  top: 0;
+  /* Align to top */
+  left: 0;
+  /* Align to left */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  font-size: 50px;
+  /* Header font size */
+  z-index: 1;
+  /* Ensure the header stays above other elements */
+}
+
+nav {
+  margin-top: 100px;
+  /* Add margin to push the nav down */
 }
 
 .App-link {
-  color: #61dafb;
+  display: inline-block;
+  /* Block display for links */
+  margin: 15px;
+  /* Space between links */
+  padding: 40px 80px;
+  /* Increased padding for larger clickable area */
+  background-color: white;
+  /* White background for links */
+  color: #4CAF50;
+  /* Green text color */
+  border-radius: 12px;
+  /* Rounded corners */
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  /* Smooth transitions */
+  font-size: 40px;
+  /* Increased font size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Smooth hover effect */
+.App-link:hover {
+  background-color: #4CAF50;
+  /* Change background on hover */
+  color: white;
+  /* Change text color on hover */
+  transform: scale(1.05);
+  /* Slightly grow the button */
+}
+
+h2 {
+  margin-top: 10px;
+  /* Space above the heading */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .App-link {
+    padding: 15px 30px;
+    /* Adjust padding for smaller screens */
+    font-size: 18px;
+    /* Reduce font size */
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 24px;
+    /* Smaller title for mobile */
+  }
+
+  h2 {
+    font-size: 20px;
+    /* Smaller subtitle for mobile */
   }
 }
